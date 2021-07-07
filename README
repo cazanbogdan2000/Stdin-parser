@@ -1,0 +1,26 @@
+CAZAN BOGDAN-MARIAN 323CB
+
+        TEMA 1
+
+    Pentru a rezolva aceasta tema, am pornit de la primul parametru al functiei
+si l-am prelucrat luand parametrul, in cazul nostru, format, ca un simplu sir de
+caractere si l-am parsat caracter cu caracter, in urmatorul fel:
+ - daca era un simplu caracter, il afisam folosind functia primita in schelet;
+ - daca dadeam de un caracter tip '%' atunci faceam un switch pe caracterul
+imediat urmator: daca era 'd', apelam o functie care afiseaza un  numar intreg,
+functie care este recursiva, si dupa terminarea apelarii functiei, se va afisa
+numarul dorit de la cap la coada; daca era 'u', functia noastra face exact
+acelasi lucru ca si la 'd', numai ca pentru numere intregi fara semn. Idem si
+pentru cazul cu 'x', numai ca afiseaza in format hexadecimal.
+ - pentru afisarea unui caracter, adica 'c', nu mai aveam nevoie de alta functie
+speciala, iar pentru 's' se facea afisarea efectiva.
+ - in cazul in care urmatorul caracter dupa '%' era tot un '%', atunci se
+realiza o escapare, asemanatoare cu "\%".
+ - si, de asemenea, in cazul in care aparea caracterul '/' si nu era incorporat
+intr-un cod ascii (exemplu '\n', '\t', etc.), atunci se realiza o escapare a
+caracterului imediat succesor.
+
+    Functia de printare returneaza un intreg care reprezinta numarul de litere
+afisate (mai precis, lungimea stringului afisat la stdin).
+    Per total, tema a fost simpla (speram ca si urmatoarele sa fie la fel, desi
+ma indoiesc :))
